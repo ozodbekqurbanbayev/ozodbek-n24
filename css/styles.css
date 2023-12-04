@@ -45,7 +45,11 @@ img{
   max-width: 100%;
   height: auto;
 }
-
+/* OUTLINE STYLES */
+*:focus{
+  outline: 2px dashed #7296ec;
+  outline-offset: 3px;
+}
 
 /* CONTAINER */
 .container{
@@ -99,6 +103,20 @@ img{
 .currency-rates-type {
   color:#2959ce;
 }
+/* global-search-form */
+.global-search-form{
+  margin-right: 25px;
+}
+.global-search-form-input{
+  padding-top: 15px;
+padding-left: 40px;
+padding-right: 20px;
+  padding-bottom: 13px;
+  border-radius: 60px;
+  border: 0;
+  font-size: 14px;
+  line-height: 17px;
+}
 /* LANG-TOGGLE */
 .lang-toggle {
 
@@ -123,4 +141,44 @@ img{
   background-color: #fff;
   color: #000;
 
+}
+/* SITENAV */
+.sitenav {
+  padding-top: 22px;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d1d1;
+}
+.sitenav-list {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sitenav-item{
+margin-top: 4px;
+margin-bottom: 4px;
+}
+.sitenav-item:not(:last-child) {
+margin-right: 34px;
+}
+.sitenav-link {
+  color: #7F7F7F;
+  display: block;
+  text-decoration: none;
+}
+.sitenav-link:hover{
+  color: #7296ec;
+}
+.sitenav-link{
+  opacity: 0.6;
+}
+/* SITE-HEADER-BANNER */
+.site-header-banner-link{
+display: flex;
 }
