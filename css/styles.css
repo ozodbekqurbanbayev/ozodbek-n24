@@ -120,6 +120,7 @@ img{
   margin-right: 25px;
 }
 .global-search-form-input{
+
   padding-top: 15px;
   padding-left: 40px;
   padding-right: 20px;
@@ -128,7 +129,13 @@ img{
   border: 0;
   font-size: 14px;
   line-height: 17px;
+  background-image: url("../img/Mask.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 15px center;
+
 }
+
 /* LANG-TOGGLE */
 .lang-toggle {
 
@@ -158,8 +165,11 @@ img{
 .sitenav {
   padding-top: 22px;
   padding-bottom: 12px;
-  margin-bottom: 40px;
+
   border-bottom: 1px solid #d1d1;
+}
+.sitenav:not(:last-child){
+  margin-bottom: 40px;
 }
 .sitenav-list {
   font-size: 18px;
@@ -278,6 +288,22 @@ img{
   border-radius:10px;
   padding: 25px 70px 25px 25px;
   background-color: #ffd7ba;
+  background-image:url("../img/fon-rasm.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .netifications-cta{
+    background-image:url("../img/fon-rasm@2x.jpg") ;
+  }
+
 }
 .netifications-cta-text {
   font-size: 20px;
@@ -576,4 +602,96 @@ color: #fff;
   height: 25px;
   width: 25px;
   object-fit: contain;
+}
+/* FORM */
+.form-groups-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+}
+.form-groups-wrapper:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.form-group:not(:last-child){
+  margin-bottom: 10px;
+}
+.form-groups-wrapper .form-group{
+  margin-bottom: 0;
+  width: calc(50% - 5px);
+}
+
+
+.form-field{
+display: block;
+width: 100%;
+padding: 18px 20px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+}
+.form-field-textarea{
+  min-height: 180px;
+resize: vertical;
+}
+/* DIFINITIONS-CARD */
+
+
+.difinitions-card {
+padding-top: 40px;
+padding-left: 25px;
+padding-right: 25px;
+  background-color: #F6F6F6;
+  color: #000;
+  margin: 0;
+  border-radius: 10px;
+
+
+}
+.difinitions-card-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.difinitions-card-item:not(:last-child){
+  border-bottom: 1px solid #d2d2d2;
+
+}
+.difinitions-card-title {
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  font-family: "Rubik";
+}
+.difinitions-card-value {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+}
+/* CONTACT-PAGE */
+.contact-page-content{
+  display: flex;
+}
+.contact-page-heading{
+margin-top: 0;
+margin-bottom: 20px;
+font-size: 24px;
+line-height: 29px;
+font-weight: 500;
+font-family: "Rubik";
+color: #000;
+}
+.contact-page-form{
+  display: flex;
+  flex-direction: column;
+width: 696px;
+
+}
+.contact-page-form-submit{
+margin-top: 20px;
+align-self: flex-end;
+}
+.contact-page-info{
+width: 494px;
+margin-left: 10px;
 }
